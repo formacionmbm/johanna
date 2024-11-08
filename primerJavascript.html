@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    /*
+    * Comentario multilínea
+    * una línea
+    * otra línea
+    *
+    */
+    function miFuncion(mensaje){
+        alert(mensaje); //invocación a la función alert de javascript
+        console.log(mensaje);
+        let nombre="pepe";
+        console.log("Le he puesto una traza a "+nombre);
+        document.getElementById("nombre").value="Mi nombre";
+    }
+</script>
+</head>
+<body>
+    <!-- Comentario HTML -->
+    <form id="fdatosPersonales" name="fdatosPersonales" action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" onclick="miFuncion('Has pulsado el nombre')" required/>
+        <label for="fnacimiento">Fecha Nacimiento</label>
+        <input type="date" id="fnacimiento" name="fnacimiento"/>
+        <label for="fcolor">Color Favorito</label>
+        <input type="color" id="fcolor" name="fcolor" />
+
+        <label for="fcurso">Curso</label>
+        <select id="fcurso" name="fcurso">
+            <option value="1">POO</option>
+            <option value="2">Bases de Datos</option>
+            <option value="3">AWS</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
